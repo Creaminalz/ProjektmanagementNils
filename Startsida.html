@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Projekt</title>
+    <link rel="stylesheet" href="styles.css
+</head>
+<body>
+    <header>
+        <h1>Mina Projekt</h1>
+    </header>
+    
+    <main>
+        <section id="project-form">
+            <h2>Lägg till projekt</h2>
+            <form id="add-project-form">
+                <label for="project-name">Projektnamn:</label>
+                <input type="text" id="project-name" required>
+                
+                <label for="project-description">Beskrivning:</label>
+                <textarea id="project-description" required></textarea>
+                
+                <button type="button" onclick="addProject()">Lägg till projekt</button>
+            </form>
+        </section>
+        
+        <section id="project-list">
+            <h2>Mina Projekt</h2>
+            <ul id="projects"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
